@@ -14,7 +14,6 @@ return (
         </li>
 
       
-
         <li className="liStev">
         <span>
             <NavLink to="/usuario">
@@ -22,6 +21,7 @@ return (
             </NavLink>
             </span>
         </li>
+
 
         <li className="liStev">
         <span>
@@ -37,7 +37,7 @@ return (
         <li className="liStev">
         <span>
             <NavLink to="/evaluacion">
-                Evaluación
+                Oportunity
             </NavLink>
             </span>
         </li>

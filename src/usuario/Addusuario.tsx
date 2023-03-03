@@ -21,14 +21,14 @@ const Adduser: React.FC = () => (
     autoComplete="off"
   ><Form.Item
   label="Firstname"
-  name="Firstname"
+  name="firstname"
   rules={[{ required: true, message: 'Enter firstname' }]}
 >
   <Input />
 </Form.Item>
 <Form.Item
   label="Lastname"
-  name="Lastname"
+  name="lastname"
   rules={[{ required: true, message: 'Enter lastname' }]}
 >
   <Input />
@@ -36,7 +36,7 @@ const Adduser: React.FC = () => (
 
 <Form.Item
   label="Nui"
-  name="Nui"
+  name="nui"
   rules={[{ required: true, message: 'Enter nui' }]}
 >
   <Input />
@@ -44,7 +44,7 @@ const Adduser: React.FC = () => (
 
 <Form.Item
   label="Email"
-  name="Email"
+  name="email"
   rules={[{ required: true, message: 'Enter email' }]}
 >
   <Input />
@@ -52,7 +52,7 @@ const Adduser: React.FC = () => (
 
 <Form.Item
   label="Phone"
-  name="Phone"
+  name="phone"
   rules={[{ required: true, message: 'Enter phone' }]}
 >
   <Input />
@@ -60,11 +60,20 @@ const Adduser: React.FC = () => (
 
 <Form.Item
   label="Age"
-  name="Age"
+  name="age"
   rules={[{ required: true, message: 'Enter age' }]}
 >
   <Input />
 </Form.Item>
+
+<Form.Item
+  label="Category_id"
+  name="category_id"
+  rules={[{ required: true, message: 'Enter age' }]}
+>
+  <Input />
+</Form.Item>
+
 
 
 

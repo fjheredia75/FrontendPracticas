@@ -10,10 +10,10 @@ import {fetchApiPiensa, tableEvaluacion} from "../service/apiPiensa";
 
 interface EvaluacionData {
   id: number|string ;
-  fecha: string;
-  valido: string;
-  error: string;
-  usuario_id: string;
+  description: string;
+  fecha_inicio: number;
+  fecha_fin: number;
+  customer_id: string;
 }
 
 const columns: ColumnsType<EvaluacionData> = [
@@ -24,24 +24,24 @@ const columns: ColumnsType<EvaluacionData> = [
     render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Fecha',
-    dataIndex: 'fecha',
-    key: 'fecha',
+    title: 'Description',
+    dataIndex: 'description',
+    key: 'description',
   },
   {
-    title: 'Valido',
-    dataIndex: 'valido',
-    key: 'valido',
+    title: 'Fecha_inicio',
+    dataIndex: 'fecha_inicio',
+    key: 'fecha_inicio',
   },
   {
-    title: 'Error',
-    key: 'error',
-    dataIndex: 'error',
+    title: 'Fecha_fin',
+    key: 'fecha_fin',
+    dataIndex: 'fecha_fin',
   },
   {
-    title: 'Usuario_id',
-    key: 'usuario',
-    dataIndex: 'usuario',
+    title: 'Customer_id',
+    key: 'customer',
+    dataIndex: 'customer',
   },
   {
     title: 'Action',

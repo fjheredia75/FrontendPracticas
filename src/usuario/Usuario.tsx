@@ -13,9 +13,13 @@ import Api from './Api';
 
 export interface UsuarioData {
     id: number | string;
-    nombre: string;
-    apellido:string
-    edad:number
+    firstname: string;
+    lastname:string;
+    nui:number;
+    email :string;
+    phone:string;
+    age:number;
+    category_id:string;
 }
 
 export const Usuario: React.FC = () => {
@@ -58,6 +62,12 @@ const columns: ColumnsType<UsuarioData> = [
     title: 'age',
     key: 'age',
     dataIndex: 'age',
+    
+  },
+  {
+    title: 'category_id',
+    key: 'category_id',
+    dataIndex: 'category_id',
     
   },
   {

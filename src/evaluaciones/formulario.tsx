@@ -21,29 +21,29 @@ const Formulario: React.FC = () => (
     autoComplete="off"
   >
     <Form.Item
-      label="Fecha"
-      name="fecha"
+      label="Description"
+      name="description"
       rules={[{ required: true, message: 'Inserte la fecha porfavor' }]}
     >
       <Input />
     </Form.Item>
     <Form.Item
-      label="Valido"
-      name="valido"
+      label="Fecha_inicio"
+      name="fecha_inicio"
       rules={[{ required: true, message: 'Inserte los datos porfavor' }]}
     >
       <Input />
     </Form.Item>
     <Form.Item
-      label="Error"
-      name="error"
+      label="Fecha_fin"
+      name="fecha_fin"
       rules={[{ required: true, message: 'Inserte los datos porfavor' }]}
     >
       <Input />
     </Form.Item>
     <Form.Item
-      label="Usuario_id"
-      name="usuario_id"
+      label="Customer_id"
+      name="Customer_id"
       rules={[{ required: true, message: 'Inserte los datos porfavor' }]}
     >
       <Input />

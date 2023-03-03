@@ -20,8 +20,8 @@ function App() {
     <Navbar />
       <Routes>
       <Route path="/inicio" element={<Inicio />} />   
-      <Route path="/guia" element={<Guia />} />   
-      <Route path="/usuario" element={<Usuario />} /> 
+      <Route path="/customer" element={<Guia />} />   
+      <Route path="/category" element={<Usuario />} /> 
         <Route path="/preguntas" element={<Preguntas />} /> 
         <Route path="/cuestionario" element={<Cuestionario />} /> 
         <Route path="/contactos" element={<Contactos />} />

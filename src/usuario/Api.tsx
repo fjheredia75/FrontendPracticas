@@ -7,7 +7,7 @@ const Api = () => {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    fetch("http://localhost:8081/usuario", {
+    fetch("localhost:8081/usuario", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -80,6 +80,14 @@ const Api = () => {
         type="age"
         name="age"
         placeholder="Age...."
+        onChange={handleChange}
+      />
+
+<input
+        className="datauser"
+        type="category_id"
+        name="category_id"
+        placeholder="Category_id...."
         onChange={handleChange}
       />
       

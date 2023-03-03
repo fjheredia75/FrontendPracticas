@@ -21,29 +21,59 @@ const Formul: React.FC = () => (
     autoComplete="off"
   >
     <Form.Item
-      label="Nombre"
-      name="Nombre"
+      label="Firstname"
+      name="Firstname"
       rules={[{ required: true, message: 'Ingresa el nombre' }]}
     >
       <Input />
     </Form.Item>
     <Form.Item
-      label="Apellido"
-      name="Apellido"
+      label="Lastname"
+      name="Lastname"
       rules={[{ required: true, message: 'Ingresa el apellido' }]}
     >
       <Input />
     </Form.Item>
 
     <Form.Item
-      label="Edad"
-      name="Edad"
+      label="Nui"
+      name="Nui"
       rules={[{ required: true, message: 'Ingresa tu edad' }]}
     >
       <Input />
     </Form.Item>
 
+    <Form.Item
+      label="Email"
+      name="Email"
+      rules={[{ required: true, message: 'Ingresa tu edad' }]}
+    >
+      <Input />
+    </Form.Item>
     
+    <Form.Item
+      label="Phone"
+      name="Phone"
+      rules={[{ required: true, message: 'Ingresa tu edad' }]}
+    >
+      <Input />
+    </Form.Item>
+
+    <Form.Item
+      label="Age"
+      name="Age"
+      rules={[{ required: true, message: 'Ingresa tu edad' }]}
+    >
+      <Input />
+    </Form.Item>
+
+    <Form.Item
+      label="Category_id"
+      name="Category_id"
+      rules={[{ required: true, message: 'Ingresa tu edad' }]}
+    >
+      <Input />
+    </Form.Item>
 
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
       <Button type="primary" htmlType="submit">

@@ -11,11 +11,7 @@ import {fetchApiPiensa, tablePreguntas} from "../service/apiPiensa";
 interface PreguntasData {
   id: string | number;
   descripcion: string;
-  opcionone: string;
-  opciontwo: string;
-  opcionthree: string;
-  respuesta: string;
-  tipo: string;
+  
 
 }
 

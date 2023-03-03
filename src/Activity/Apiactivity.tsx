@@ -7,7 +7,7 @@ const Apieva = () => {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    fetch("http://localhost:8081/evaluacion", {
+    fetch("http://localhost:8081/activity", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,18 +41,12 @@ const Apieva = () => {
       />
       <input
         className="datapre"
-        type="fecha_inicio"
-        name="fecha_inicio"
-        placeholder="Fech_inicio...."
+        type="fecha"
+        name="fecha"
+        placeholder="Fecha...."
         onChange={handleChange}
       />
-      <input
-        className="datapre"
-        type="fecha_fin"
-        name="fecha_fin"
-        placeholder="Fech_fin...."
-        onChange={handleChange}
-      />
+     
        <input
         className="datapre"
         type="customerId"
