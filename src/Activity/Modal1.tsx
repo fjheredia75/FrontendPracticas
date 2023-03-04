@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import Formulario from './formulario';
+import Formulario from './Formulario';
 
 const Evaluacion2: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

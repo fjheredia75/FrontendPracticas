@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import Addactivity from './Addactivity';
-import Apieva from './Apiactivity';
+import Apieva from './Apiactivitys';
 
 const Modal2: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,9 +21,9 @@ const Modal2: React.FC = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Agregar evaluacion
+        Agregar activity
       </Button>
-      <Modal title="Ingrese los datos para agregar una evaluacion" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Ingrese los datos para agregar actividad" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <Apieva/>      
       </Modal>
     </>

@@ -9,8 +9,8 @@ import Guia from "./guia/Guia";
 import Inicio from "./inicio/Inicio";
 import Contactos from "./contactos/Contactos";
 import Evaluacion from "./evaluaciones/Evaluacion";
-import {Usuario} from "./usuario/Usuario"
-import Cuestionario from "./cuestionario/Cuestionario";
+import {Usuario} from "./usuario/Usuario";
+import Activity from "./activity/Activity"
 
 
 

@@ -49,8 +49,8 @@ const Apieva = () => {
      
        <input
         className="datapre"
-        type="customerId"
-        name="customerId"
+        type="oportunityId"
+        name="oportunityId"
         placeholder="Usuario...."
         onChange={handleChange}
       />
