@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./User.css"
+import "./Custom.css"
 
 
 const Api = () => {
@@ -7,7 +7,7 @@ const Api = () => {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    fetch("localhost:8081/usuario", {
+    fetch("localhost:8081/customer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

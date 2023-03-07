@@ -4,12 +4,12 @@ import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Preguntas from "./preguntas/Preguntas";
+import Category from "./category/Category";
 import Guia from "./guia/Guia";
 import Inicio from "./inicio/Inicio";
 import Contactos from "./contactos/Contactos";
-import Evaluacion from "./evaluaciones/Evaluacion";
-import {Usuario} from "./usuario/Usuario";
+import Oportunity from "./oportunity/Oportunity";
+import {Usuario} from "./customer/Customer";
 import Activity from "./activity/Activity"
 
 
@@ -21,11 +21,11 @@ function App() {
       <Routes>
       <Route path="/inicio" element={<Inicio />} />   
       <Route path="/customer" element={<Guia />} />   
-      <Route path="/category" element={<Usuario />} /> 
-        <Route path="/preguntas" element={<Preguntas />} /> 
-        <Route path="/cuestionario" element={<Cuestionario />} /> 
+      <Route path="/customer" element={<Usuario />} /> 
+        <Route path="/category" element={<Category />} /> 
+        <Route path="/activity" element={<Activity />} /> 
         <Route path="/contactos" element={<Contactos />} />
-        <Route path="/evaluacion" element={<Evaluacion/>} />      
+        <Route path="/oportunity" element={<Oportunity/>} />      
       </Routes>
     </BrowserRouter>   
   );

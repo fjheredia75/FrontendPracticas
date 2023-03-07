@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import Addpregunta from "./Addpregunta"
-import Apipre from './Apipreguntas';
+import Addcustomer from "./Addcustomer"
+import Api from "./Api"
+import "./Custom.css"
 
 const Secondmodal: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,10 +22,10 @@ const Secondmodal: React.FC = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Agregar description
+        Agregar usuario
       </Button>
-      <Modal title="Ingrese los datos" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <Apipre/>
+      <Modal title="Ingrese los datos para agregar al usuario" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <Api/>
       </Modal>
     </>
   );

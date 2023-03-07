@@ -14,7 +14,7 @@ const DataRow: React.FC<Props> = ({ id, data }) => {
 
   const handleEdit = async () => {
     try {
-      await axios.patch(`localhost:8081/usuario/${id}`, newData);
+      await axios.patch(`localhost:8081/customer/${id}`, newData);
       alert('Los datos se han editado correctamente');
       setEditMode(false);
     } catch (error) {

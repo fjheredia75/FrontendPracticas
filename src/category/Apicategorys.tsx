@@ -7,7 +7,7 @@ const Apipre = () => {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    fetch("http://localhost:8081/preguntas", {
+    fetch("http://localhost:8081/category", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import Addevaluacion from './Addevaluacion';
-import Apieva from './Apievaluaciones';
+import Addevaluacion from './Addoportunity';
+import Apieva from './Apioportunitys';
 
 const Modal2: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +21,7 @@ const Modal2: React.FC = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Agregar evaluacion
+        Agregar oportunity
       </Button>
       <Modal title="Ingrese los datos para agregar una evaluacion" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <Apieva/>      

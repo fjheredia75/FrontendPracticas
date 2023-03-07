@@ -1,11 +1,11 @@
 import React from 'react';
 import { Space, Table, Tag } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-import Evaluacion2 from './Modal1';
+import Evaluacion2 from './Modal';
 import Evaluacion3 from './Delate';
-import Modal2 from  "./Modal4";
+import Modal2 from  "./Modal2";
 import useSWR from 'swr';
-import {fetchApiPiensa, tableEvaluacion} from "../service/apiPiensa";
+import {fetchApiPiensa, tableOportunity} from "../service/apiPiensa";
 
 
 interface EvaluacionData {
@@ -99,7 +99,7 @@ const columns: ColumnsType<EvaluacionData> = [
 */
 const App: React.FC = () =>{
 
-const { data, error } = useSWR<EvaluacionData[]>(tableEvaluacion, fetchApiPiensa, {
+const { data, error } = useSWR<EvaluacionData[]>(tableOportunity, fetchApiPiensa, {
   suspense: false,
 });
 

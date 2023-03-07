@@ -7,7 +7,7 @@ const Apieva = () => {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    fetch("http://localhost:8081/evaluacion", {
+    fetch("http://localhost:8081/oportunity", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

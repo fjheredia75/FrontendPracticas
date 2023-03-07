@@ -5,7 +5,7 @@ import Moda from './Modal'
 import Delet from './BotonDelete';
 import Secondmodal from './Modal2';
 import useSWR from 'swr';
-import {fetchApiPiensa, tableUsuario} from "../service/apiPiensa";
+import {fetchApiPiensa, tableCustomer} from "../service/apiPiensa";
 import DataTable from 'react-data-table-component';
 import { PlusOutlined } from '@ant-design/icons';
 import Api from './Api';
@@ -98,7 +98,7 @@ const showDrawer = () => {
   setOpen(true);
 };
 
-  const { data, error } = useSWR<UsuarioData[]>(tableUsuario, fetchApiPiensa, {
+  const { data, error } = useSWR<UsuarioData[]>(tableCustomer, fetchApiPiensa, {
     suspense: false,
 });
   

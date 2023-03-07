@@ -5,7 +5,7 @@ import Modals from "./Modal"
 import Delete from "./Botondelete"
 import Secondmodal from './Modal2';
 import useSWR from 'swr';
-import {fetchApiPiensa, tablePreguntas} from "../service/apiPiensa";
+import {fetchApiPiensa, tableCategory} from "../service/apiPiensa";
 
 
 interface PreguntasData {
@@ -109,7 +109,7 @@ const columns: ColumnsType<PreguntasData> = [
 */
 
 const App: React.FC = () => {
-  const { data, error } = useSWR<PreguntasData[]>(tablePreguntas, fetchApiPiensa, {
+  const { data, error } = useSWR<PreguntasData[]>(tableCategory, fetchApiPiensa, {
     suspense: false,
 });
 

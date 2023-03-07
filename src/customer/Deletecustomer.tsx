@@ -8,7 +8,7 @@ interface Props {
 const DataRow: React.FC<Props> = ({ id }) => {
   const handleDelete = async () => {
     try {
-      await axios.delete(`localhost:8081/usuario/delete/${id}`);
+      await axios.delete(`localhost:8081/customer/delete/${id}`);
       alert('Los datos se han eliminado correctamente');
     } catch (error) {
       console.error(error);

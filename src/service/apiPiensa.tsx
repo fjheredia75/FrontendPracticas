@@ -1,6 +1,7 @@
-export const tableUsuario = 'http://localhost:8081/usuario'
-export const tablePreguntas = 'http://localhost:8081/preguntas'
-export const tableEvaluacion = 'http://localhost:8081/evaluacion/with/usuario'
+export const tableCustomer = 'http://localhost:8081/customer'
+export const tableActivity = 'http://localhost:8081/activity'
+export const tableOportunity = 'http://localhost:8081/oportunity/with/customer'
+export const tableCategory = 'http://localhost:8081/category'
 
 export const fetchApiPiensa = async (url:string) => {
    
