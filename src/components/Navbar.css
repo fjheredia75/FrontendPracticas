@@ -23,6 +23,6 @@ li.liStev a:hover:not(.active) {
 }
 
 .active {
-    background-color: #ff0000;
+    background-color: green;
 }
 

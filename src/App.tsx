@@ -5,7 +5,6 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Category from "./category/Category";
-import Guia from "./guia/Guia";
 import Inicio from "./inicio/Inicio";
 import Contactos from "./contactos/Contactos";
 import Oportunity from "./oportunity/Oportunity";
@@ -19,8 +18,7 @@ function App() {
     <BrowserRouter>
     <Navbar />
       <Routes>
-      <Route path="/inicio" element={<Inicio />} />   
-      <Route path="/customer" element={<Guia />} />   
+      <Route path="/inicio" element={<Inicio />} />     
       <Route path="/customer" element={<Usuario />} /> 
         <Route path="/category" element={<Category />} /> 
         <Route path="/activity" element={<Activity />} /> 
