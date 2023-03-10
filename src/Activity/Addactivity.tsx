@@ -20,6 +20,12 @@ const Addevaluacion : React.FC = () => (
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
+
+<Form.Item
+      label="Description"
+      name="Description"
+      rules={[{ required: true, message: 'Inserte la fecha porfavor' }]}
+    >
     <Form.Item
       label="Description"
       name="Description"
