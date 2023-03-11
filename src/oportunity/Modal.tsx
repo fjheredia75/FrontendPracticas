@@ -22,7 +22,7 @@ const Evaluacion2: React.FC = () => {
       <Button type="primary" onClick={showModal}>
         Editar
       </Button>
-      <Modal title="Editar evaluacion" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Edit oportunity" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <Formulario/>      
       </Modal>
     </>
