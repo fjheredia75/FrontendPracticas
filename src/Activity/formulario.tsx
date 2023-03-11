@@ -28,19 +28,13 @@ const Formulario: React.FC = () => (
       <Input />
     </Form.Item>
     <Form.Item
-      label="Fecha_inicio"
-      name="fecha_inicio"
+      label="Fecha"
+      name="fecha"
       rules={[{ required: true, message: 'Inserte los datos porfavor' }]}
     >
       <Input />
     </Form.Item>
-    <Form.Item
-      label="Fecha_fin"
-      name="fecha_fin"
-      rules={[{ required: true, message: 'Inserte los datos porfavor' }]}
-    >
-      <Input />
-    </Form.Item>
+   
     <Form.Item
       label="Customer_id"
       name="Customer_id"

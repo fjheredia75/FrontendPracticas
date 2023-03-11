@@ -21,11 +21,6 @@ const Addevaluacion : React.FC = () => (
     autoComplete="off"
   >
 
-<Form.Item
-      label="Description"
-      name="Description"
-      rules={[{ required: true, message: 'Inserte la fecha porfavor' }]}
-    >
     <Form.Item
       label="Description"
       name="Description"
